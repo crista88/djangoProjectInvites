@@ -1,0 +1,47 @@
+/* img sectiunea hero */
+
+.hero-section {
+  background-image: url('heroimg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+/* Stiluri CSS pentru carduri */
+.card-cover {
+  background-size: cover; /* Asigură că imaginea acoperă complet fundalul cardului */
+  background-position: center; /* Centrează imaginea pe fundalul cardului */
+}
+
+.text-grey {
+  color: lightslategrey;
+}
+
+.text-greyparty {
+  color: lightgrey;
+}
+
+.ribbon-container {
+  width: 100%;
+  height: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ribbon {
+  position: absolute;
+  width: 200%; /* Lățimea este dublă pentru a crea mișcarea */
+  height: 100%;
+  background: linear-gradient(to right, transparent 50%, #007bff 50%);
+  /*animation: ribbon-animation 8s infinite linear; /* Animarea se repetă la infinit */
+}
+ /*
+@keyframes ribbon-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+*/
