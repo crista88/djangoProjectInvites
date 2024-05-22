@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Models{% endblock %}
+
+{% block content %}
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="{% url 'home' %}">Invite In Style</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">Models</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">Log In</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        {% for model in models %}
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{{model.image.url}}" class="card-img-top" alt="{{ model.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ model.name }}</h5>
+                        <p class="card-text">{{ model.description }}</p>
+                        <a href="{% url 'model_detail' model.id %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+        {% endfor %}
+    </div>
+    
+    
+{% endblock %}

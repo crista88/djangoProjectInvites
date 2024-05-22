@@ -19,9 +19,9 @@
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="home.html">Home</a></li>
-											<li><a href="#">How it works</a></li>
-											<li><a href="#">Models</a></li>
+											<li><a href="{% url 'home' %}">Home</a></li>
+											<li><a href="{% url 'howitworks' %}">How it works</a></li>
+											<li><a href="{% url 'models' %}">Models</a></li>
 											<li><a href="#">Sign Up</a></li>
 											<li><a href="#">Log In</a></li>
 										</ul>
@@ -39,8 +39,8 @@
 							All online with just a few clicks.<br />
 							Digital invites, elegant and simple.</p>
 							<ul class="actions special">
-								<li><a href="#" class="button secondary">How it works</a></li>
-                                <li><a href="#" class="button secondary">Models</a></li>
+								<li><a href="{% url 'howitworks' %}" class="button secondary">How it works</a></li>
+                                <li><a href="{% url 'models' %}" class="button secondary">Models</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -54,13 +54,13 @@
 								Get it done in just a few clicks. </h2>
 								<p>Log in, choose your model, make it yours with personal pictures and texts,<br />
 								choose your price plan and then send the link!<br />
-                                Keep track of the expenses with your own event planner section and check your RSPV <br />
+                                Keep track of the expenses with your own event planner section and check your RSPV list, <br />
                                 updated list in the dedicated section for confirmations AND lots more. </p>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+								
 								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+								
 							</ul>
 						</div>
 					</section>
@@ -97,33 +97,30 @@
 						<div class="inner">
 							<header class="major">
 								<h2>Prices and characteristics</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<p>Big or small your event should be perfect.So, in any case we got you covered.<br />
+								Either a single invite to be sent to as many you need or a group invite to be sent to <br />
+                                    all,you will have the same functionalities to make you event unique .</p>
 							</header>
 							<ul class="features">
-								<li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								<li class="icon fa-heart">
+									<h3>0.50 $/per invite</h3>
+									<p>Individual link for each invite, unlimited number of invites and access to your event planner.</p>
 								</li>
 								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<h3>29.99 $/per group invite</h3>
+									<p>Unlimited number of invites, general link and access to your invite planner </p>
 								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								<li >
+									<p>With either of the packages you can personalize your invite as you wish and in the same time you get a countdown for the event, RSVP list management and names displayed in the invite for your guests.</p>
+								</li>
+								<li >
+									<p>You can modify at any moment your invite for updates, check the statistics (confirmations or rain checks for your invites) for each guest, distribution on social media and managing your confirmation on the platform and email.</p>
+								</li>
+								<li >
+									<p>In the platform you will get access to your own event planner, usefully to manage your expenses for the event, programming reminders and TO DO's .</p>
+								</li>
+								<li >
+									<p>After your event you will be able to upload pictures from your event and you and your guest will get automatically a digital photo album with the photos and messages.For that, invite them to leave you a nice good wish message when they confirm the invite in order to have the most beautifully memory to share .</p>
 								</li>
 							</ul>
 						</div>
@@ -133,8 +130,8 @@
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+								<h2>InviteInStyle with us!</h2>
+								<p>Start your event planning here by login into your account.</p>
 							</header>
 							<ul class="actions stacked">
 								<li><a href="#" class="button fit primary">Sign Up</a></li>
