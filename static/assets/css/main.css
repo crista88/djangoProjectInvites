@@ -75,7 +75,8 @@ input, select, textarea {
 /* Basic */
 
 	@-ms-viewport {
-		width: device-width;
+		width: 100vw;
+    	height: 100vh;
 	}
 
 	html {
@@ -249,7 +250,7 @@ input, select, textarea {
 	}
 
 	code {
-		background: rgba(144, 144, 144, 0.25);
+		background: rgba(144, 144, 144, 0.5);
 		border-radius: 3px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
@@ -2348,7 +2349,7 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.25);
+				background-color: rgba(200, 200, 200, 0.5);
 			}
 
 		table td {
