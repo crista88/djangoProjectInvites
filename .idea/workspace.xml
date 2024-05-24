@@ -5,91 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090e2987-0981-4adb-9cb6-088a3c643160" name="Changes" comment="new landing page">
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/css/noscript.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/js/breakpoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/js/browser.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/js/jquery.scrollex.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/js/jquery.scrolly.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/base/_page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/base/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/base/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_actions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_banner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_gallery.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_items.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_section.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_spotlight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/components/_wrapper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/layout/_wrapper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/libs/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/libs/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/libs/_html-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/libs/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/libs/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/libs/_vendor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/sass/noscript.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/templates/template1/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/models/templates/template1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/userextend/create_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userextend/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/08637e16-d73d-42fa-bfcc-a8675197e5a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08637e16-d73d-42fa-bfcc-a8675197e5a8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProjectInvites/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProjectInvites/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProjectInvites/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProjectInvites/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_images/celestial.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/model_images/celestial.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_images/confetti.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/model_images/confetti.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_images/forever.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/model_images/forever.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_images/purelove.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/model_images/purelove.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/homepage/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/howitworks/howitworks.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/howitworks/howitworks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/models/model_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/model_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/models/models.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/models.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/userextend/create_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userextend/create_user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,27 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.djangoProjectInvites.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/python/back-end tech/InvitesAPP/djangoProjectInvites",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.djangoProjectInvites.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/python/back-end tech/InvitesAPP/djangoProjectInvites&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\python\back-end tech\InvitesAPP\djangoProjectInvites\static\templates\template1" />
