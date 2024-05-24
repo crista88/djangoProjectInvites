@@ -1,165 +1,157 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} InviteInStyle {%  endblock %}
+{% block title %} InviteInStyle {% endblock %}
 
 {% block content %}
-    
-	<body class="landing is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <body class="landing is-preload">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="home.html">InviteInStyle</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="{% url 'home' %}">Home</a></li>
-											<li><a href="{% url 'howitworks' %}">How it works</a></li>
-											<li><a href="{% url 'models' %}">Models</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>InviteInStyle</h2>
-							<p>Create your invite.<br />
-							All online with just a few clicks.<br />
-							Digital invites, elegant and simple.</p>
-							<ul class="actions special">
-								<li><a href="{% url 'howitworks' %}" class="button secondary">How it works</a></li>
-                                <li><a href="{% url 'models' %}" class="button secondary">Models</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+				
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <h2>InviteInStyle</h2>
+                <p>Create your invite.<br/>
+                    All online with just a few clicks.<br/>
+                    Digital invites, elegant and simple.</p>
+                <ul class="actions special">
+                    <li><a href="{% url 'howitworks' %}" class="button secondary">How it works</a></li>
+                    <li><a href="{% url 'models' %}" class="button secondary">Models</a></li>
+                </ul>
+            </div>
+            <a href="#one" class="more scrolly">Learn More</a>
+        </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>A cool and eco friendly way to invite guests to your event!<br />
-								Get it done in just a few clicks. </h2>
-								<p>Log in, choose your model, make it yours with personal pictures and texts,<br />
-								choose your price plan and then send the link!<br />
-                                Keep track of the expenses with your own event planner section and check your RSPV list, <br />
-                                updated list in the dedicated section for confirmations AND lots more. </p>
-							</header>
-							<ul class="icons major">
-								
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								
-							</ul>
-						</div>
-					</section>
+        <!-- One -->
+        <section id="one" class="wrapper style1 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>A cool and eco friendly way to invite guests to your event!<br/>
+                        Get it done in just a few clicks. </h2>
+                    <p>Log in, choose your model, make it yours with personal pictures and texts,<br/>
+                        choose your price plan and then send the link!<br/>
+                        Keep track of the expenses with your own event planner section and check your RSPV list, <br/>
+                        updated list in the dedicated section for confirmations AND lots more. </p>
+                </header>
+                <ul class="icons major">
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="{% static 'images/wedding.png' %}" alt="" /></div><div class="content">
-								<h2>Invite Models for Weddings</h2>
-								<p>From Celestial Love to Forever Yours, from Serenity to Classy, you will find
-                                inspiring models to work with your wedding them or to describe best the event that
-                                    marks the beginning of your journey </p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="{% static 'images/baptism.png' %}" alt="" /></div><div class="content">
-								<h2>Invite Models for Baptism</h2>
-								<p>They say that a child is a blessing and a joy.We agree,so we created colourful and joyful 
-                                invite models for everyone. Pick the one that make your heart melts just like your baby does.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="{% static 'images/party.png' %}" alt="" /></div><div class="content">
-								<h2> Anniversary or other Events </h2>
-								<p>Every important moment of our life must be celebrated properly.So, anniversary, graduation,
-                                retirement or whatever other reason you have to celebrate, create your perfect online invite
-                                to notify all your friends that being present is A MUST.</p>
-							</div>
-						</section>
-					</section>
+                    <li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Prices and characteristics</h2>
-								<p>Big or small your event should be perfect.So, in any case we got you covered.<br />
-								Either a single invite to be sent to as many you need or a group invite to be sent to <br />
-                                    all,you will have the same functionalities to make you event unique .</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-heart">
-									<h3>0.50 $/per invite</h3>
-									<p>Individual link for each invite, unlimited number of invites and access to your event planner.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>29.99 $/per group invite</h3>
-									<p>Unlimited number of invites, general link and access to your invite planner </p>
-								</li>
-								<li >
-									<p>With either of the packages you can personalize your invite as you wish and in the same time you get a countdown for the event, RSVP list management and names displayed in the invite for your guests.</p>
-								</li>
-								<li >
-									<p>You can modify at any moment your invite for updates, check the statistics (confirmations or rain checks for your invites) for each guest, distribution on social media and managing your confirmation on the platform and email.</p>
-								</li>
-								<li >
-									<p>In the platform you will get access to your own event planner, usefully to manage your expenses for the event, programming reminders and TO DO's .</p>
-								</li>
-								<li >
-									<p>After your event you will be able to upload pictures from your event and you and your guest will get automatically a digital photo album with the photos and messages.For that, invite them to leave you a nice good wish message when they confirm the invite in order to have the most beautifully memory to share .</p>
-								</li>
-							</ul>
-						</div>
-					</section>
+                </ul>
+            </div>
+        </section>
 
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>InviteInStyle with us!</h2>
-								<p>Start your event planning here by login into your account.</p>
-							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Sign Up</a></li>
-								<li><a href="#" class="button fit">Log In</a></li>
-							</ul>
-						</div>
-					</section>
+        <!-- Two -->
+        <section id="two" class="wrapper alt style2">
+            <section class="spotlight">
+                <div class="image"><img src="{% static 'images/wedding.png' %}" alt=""/></div>
+                <div class="content">
+                    <h2>Invite Models for Weddings</h2>
+                    <p>From Celestial Love to Forever Yours, from Serenity to Classy, you will find
+                        inspiring models to work with your wedding them or to describe best the event that
+                        marks the beginning of your journey </p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <div class="image"><img src="{% static 'images/baptism.png' %}" alt=""/></div>
+                <div class="content">
+                    <h2>Invite Models for Baptism</h2>
+                    <p>They say that a child is a blessing and a joy.We agree,so we created colourful and joyful
+                        invite models for everyone. Pick the one that make your heart melts just like your baby
+                        does.</p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <div class="image"><img src="{% static 'images/party.png' %}" alt=""/></div>
+                <div class="content">
+                    <h2> Anniversary or other Events </h2>
+                    <p>Every important moment of our life must be celebrated properly.So, anniversary, graduation,
+                        retirement or whatever other reason you have to celebrate, create your perfect online invite
+                        to notify all your friends that being present is A MUST.</p>
+                </div>
+            </section>
+        </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="#">Cristina</a></li>
-						</ul>
-					</footer>
+        <!-- Three -->
+        <section id="three" class="wrapper style3 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>Prices and characteristics</h2>
+                    <p>Big or small your event should be perfect.So, in any case we got you covered.<br/>
+                        Either a single invite to be sent to as many you need or a group invite to be sent to <br/>
+                        all,you will have the same functionalities to make you event unique .</p>
+                </header>
+                <ul class="features">
+                    <li class="icon fa-heart">
+                        <h3>0.50 $/per invite</h3>
+                        <p>Individual link for each invite, unlimited number of invites and access to your event
+                            planner.</p>
+                    </li>
+                    <li class="icon fa-heart">
+                        <h3>29.99 $/per group invite</h3>
+                        <p>Unlimited number of invites, general link and access to your invite planner </p>
+                    </li>
+                    <li>
+                        <p>With either of the packages you can personalize your invite as you wish and in the same time
+                            you get a countdown for the event, RSVP list management and names displayed in the invite
+                            for your guests.</p>
+                    </li>
+                    <li>
+                        <p>You can modify at any moment your invite for updates, check the statistics (confirmations or
+                            rain checks for your invites) for each guest, distribution on social media and managing your
+                            confirmation on the platform and email.</p>
+                    </li>
+                    <li>
+                        <p>In the platform you will get access to your own event planner, usefully to manage your
+                            expenses for the event, programming reminders and TO DO's .</p>
+                    </li>
+                    <li>
+                        <p>After your event you will be able to upload pictures from your event and you and your guest
+                            will get automatically a digital photo album with the photos and messages.For that, invite
+                            them to leave you a nice good wish message when they confirm the invite in order to have the
+                            most beautifully memory to share .</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-			</div>
+        <!-- CTA -->
+        <section id="cta" class="wrapper style4">
+            <div class="inner">
+                <header>
+                    <h2>InviteInStyle with us!</h2>
+                    <p>Start your event planning here by login into your account.</p>
+                </header>
+                <ul class="actions stacked">
+                    <li><a href="{% url 'create-user' %}" class="button fit primary">Sign Up</a></li>
+                    <li><a href="{% url 'login' %}" class="button fit">Log In</a></li>
+                </ul>
+            </div>
+        </section>
 
-		
-			
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Untitled</li>
+                <li>Design: <a href="#">Cristina</a></li>
+            </ul>
+        </footer>
 
-	</body>
+    </div>
 
-    
+
+    </body>
+
+
 {% endblock %}

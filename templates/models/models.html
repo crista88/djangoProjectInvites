@@ -5,42 +5,30 @@
 
 {% block content %}
     <div id="page-wrapper">
+        <section id="three" class="wrapper style3 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>Available models</h2>
+                    <p>Choose your style and personalize it with your own pictures and details.All the models are
+                        adaptable for any event. All you have to do is to decide the theme that you want for your
+                        party. </p>
+                </header>
+                <ul class="features">
+                    {% for model in models %}
+                        <li style="background-image: url('{{ model.image.url }}'); background-size: cover; background-position: center; position: relative; padding: 20px; color: white;">
+                            <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; right: 0; bottom: 0; left: 0;"></div>
+                            <div class="content" style="position: relative; z-index: 1;display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%;">
+                                <h3>{{ model.name }}</h3>
+                                <p>{{ model.description }}</p>
+                                <a href="{% url 'template1' model.id %}" class="button fit">Show preview</a>
+                            </div>
+                        </li>
 
-        <!-- Header -->
-        <header id="header">
-            <h1><a href="{% url 'home' %}">Invite In Style</a></h1>
-            <nav id="nav">
-                <ul>
-                    <li class="special">
-                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
-                        <div id="menu">
-                            <ul>
-                                <li><a href="{% url 'home' %}">Home</a></li>
-                                <li><a href="#">How it works</a></li>
-                                <li><a href="#">Models</a></li>
-                                <li><a href="#">Sign Up</a></li>
-                                <li><a href="#">Log In</a></li>
-                            </ul>
-                        </div>
-                    </li>
+                    {% endfor %}
                 </ul>
-            </nav>
-        </header>
-        
-        {% for model in models %}
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="{{model.image.url}}" class="card-img-top" alt="{{ model.name }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ model.name }}</h5>
-                        <p class="card-text">{{ model.description }}</p>
-                        <a href="{% url 'model_detail' model.id %}" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
             </div>
-            
-        {% endfor %}
+        </section>
     </div>
-    
-    
+
+
 {% endblock %}
