@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090e2987-0981-4adb-9cb6-088a3c643160" name="Changes" comment="new landing page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/userextend/create_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userextend/create_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ballons.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ceremony.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/flowers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/hearts.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sign-up.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/welcome.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716390026931</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new landing page">
+      <option name="closed" value="true" />
+      <created>1716553350578</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716553350578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
