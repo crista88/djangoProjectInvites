@@ -1,0 +1,33 @@
+{% extends 'base_dashboard.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <form method="post">
+                {% csrf_token %}
+
+                <!-- Budget Form -->
+                <label for="id_amount">Amount:</label>
+                <input type="number" id="id_amount" name="amount">
+
+                <!-- Expense Form -->
+                <label for="id_description">Description:</label>
+                <input type="text" id="id_description" name="description" >
+
+                <label for="id_amount_spent">Amount Spent:</label>
+                <input type="number" id="id_amount_spent" name="amount_spent" >
+
+                <!-- Task Form -->
+                <label for="id_task_name">Task Name:</label>
+                <input type="text" id="id_task_name" name="task_name" >
+
+                <label for="id_due_date">Due Date:</label>
+                <input type="date" id="id_due_date" name="due_date" >
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

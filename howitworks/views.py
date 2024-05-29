@@ -1,8 +1,14 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.contrib.auth.decorators import login_required
 
 
-# Create your views here.
 def howitworks(request):
-    return render(request, 'howitworks/howitworks.html')
+    if request.user.is_authenticated:
+        return howitworks_dashboard(request)
+    else:
+        return render(request, 'howitworks/howitworks.html')
 
+
+@login_required
+def howitworks_dashboard(request):
+    return render(request, 'howitworks/howitworks_dashboard.html')

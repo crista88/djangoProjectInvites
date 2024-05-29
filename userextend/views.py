@@ -1,8 +1,11 @@
+from django.contrib.auth import login
+from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
 from django.core.mail import EmailMessage
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.template.loader import get_template
 from django.urls import reverse_lazy
+from django.views import View
 from django.views.generic import CreateView
 
 from djangoProjectInvites.settings import EMAIL_HOST_USER
@@ -14,7 +17,6 @@ class UserCreateView(CreateView):
     template_name = 'userextend/create_user.html'
     model = User
     form_class = UserForm
-    success_url = reverse_lazy('home')
 
     def form_valid(self, form):
         if form.is_valid():
@@ -35,4 +37,22 @@ class UserCreateView(CreateView):
             # mail.send()
 
             new_user.save()
-            return super(UserCreateView, self).form_valid(form)
+            login(self.request, new_user)
+            return redirect('dashboard_home')
+        return super().form_valid(form)
+
+
+class UserLoginView(View):
+    template_name = 'registration/login.html'
+
+    def get(self, request):
+        form = AuthenticationForm()
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request):
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('dashboard_home')
+        return render(request, self.template_name, {'form': form})

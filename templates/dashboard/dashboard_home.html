@@ -1,0 +1,87 @@
+{% extends 'base_dashboard.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <body class="landing is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper" style="background-image: url('{% static 'images/welcome.jpg' %}');">
+
+				
+        <!-- Banner -->
+        <section id="banner" >
+            <div class="inner">
+                <h2>InviteInStyle</h2>
+                <p>Welcome {{ user.first_name }}!<br/>
+                    We are glad to have you here.<br/>
+                    Check below how it works, price plans and available models, to start .</p>
+                <ul class="actions special">
+                    <li><a href="{% url 'howitworks_dashboard' %}" class="button secondary">How it works and Prices</a></li>
+                    <li><a href="{% url 'models_dashboard' %}" class="button secondary">Models</a></li>
+                </ul>
+            </div>
+            <a href="#one" class="more scrolly">Learn More</a>
+        </section>
+
+        <!-- One -->
+        <section id="one" class="wrapper style1 special" style="background-color:plum">
+            <div class="inner">
+                <header class="major">
+                    <h2>You made the best choice {{ user.first_name }}!</h2>
+                    
+                    <p>We made it simple for you.Choose your model, make it yours with personal pictures and texts,
+                        choose your price plan and then send the link! Keep track of the expenses with your own event planner section and check your RSPV list,
+                        updated list in the dedicated section for confirmations AND lots more. If you still have questions, 
+                        send us a message on Whatsup, and we will get back to you ASAP. </p>
+                    <p> Your Dashboard is really simple to use and allows you to manage your invite links and event expenses.
+                        After your event just create your own digital photo album and send it to all your guests. Like this for sure you will not forget anyone!
+                    Want to change your password or username?Just go to your account settings and get it done in seconds!
+                    As we said : Managing your event will be a fun and easy thing to do with InviteInStyle !</p>
+                </header>
+                <ul class="icons major">
+
+                    <li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
+
+                </ul>
+            </div>
+        </section>
+
+        
+        <!-- CTA -->
+        <section id="cta" class="wrapper style4">
+            <div class="inner">
+                <header>
+                    <h2>InviteInStyle with us!</h2>
+                    <p>Check our models or start planning your event!.</p>
+                </header>
+                <ul class="actions stacked">
+                    <li><a href="{% url 'models_dashboard' %}" class="button fit primary">Models</a></li>
+                    <li><a href="#" class="button fit">Event Planner</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Untitled</li>
+                <li>Design: <a href="#">Cristina</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+
+    </body>
+
+
+{% endblock %}

@@ -1,8 +1,9 @@
+# urls.py al aplicației models
 from django.urls import path
-
-from models.views import models_view, model_detail_view
+from . import views
 
 urlpatterns = [
-    path('', models_view, name='models'),
-    path('<int:id>/', model_detail_view, name='template1'),
+    path('', views.models_view, name='models'),
+    path('models_dashboard/', views.models_view_dashboard, name='models_dashboard'),
+    path('<int:id>/', views.model_detail_view, name='template1'),
 ]

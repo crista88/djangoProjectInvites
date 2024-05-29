@@ -1,0 +1,12 @@
+{% extends 'base_dashboard.html' %}
+
+{% block title %}{{ model.name }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ model.name }}</h1>
+    <img src="{{ model.image.url }}" class="img-fluid" height="100" width="100" alt="{{ model.name }}">
+    <p>{{ model.description }}</p>
+    <a href="{% url 'models' %}" class="btn btn-secondary">Back to Models</a>
+</div>
+{% endblock %}

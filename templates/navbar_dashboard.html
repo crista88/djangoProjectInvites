@@ -1,17 +1,18 @@
 <!-- Header -->
 <header id="header" class="alt">
-    <h1><a href="#">InviteInStyle</a></h1>
-    <nav id="nav">
+    
+    <nav id="nav" >
         <ul>
             <li class="special">
                 <a href="#menu" class="menuToggle"><span>Menu</span></a>
                 <div id="menu" style="background-color:plum">
                     <ul>
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'howitworks' %}">How it works</a></li>
-                        <li><a href="{% url 'models' %}">Models</a></li>
-                        <li><a href="{% url 'create-user' %}">Sign Up</a></li>
-                        <li><a href="{% url 'login' %}">Log In</a></li>
+                        <li><a href="{% url 'dashboard_home' %}">Dashboard</a></li>
+                        <li><a href="{% url 'howitworks_dashboard' %}">How it works</a></li>
+                        <li><a href="{% url 'models_dashboard' %}">Models</a></li>
+                        <li><a href="{% url 'event_planner' %}">Event Planner</a></li>
+                        <li><a href="#">Invite Links</a></li>
+                        <li><a href="#">Account settings</a></li>
                         <li><a href="https://api.whatsapp.com/send?phone=40790319967" target="_blank">Whatsapp</a></li>
                     </ul>
                 </div>

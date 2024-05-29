@@ -4,13 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="090e2987-0981-4adb-9cb6-088a3c643160" name="Changes" comment="new landing page">
-      <change afterPath="$PROJECT_DIR$/static/images/ballons.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/ceremony.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flowers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hearts.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sign-up.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/welcome.jpg" afterDir="false" />
+    <list default="true" id="090e2987-0981-4adb-9cb6-088a3c643160" name="Changes" comment="last changes for log in and sign up">
+      <change afterPath="$PROJECT_DIR$/dashboard/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/migrations/0002_budget_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/migrations/0003_alter_budget_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/migrations/0004_alter_budget_user_alter_expense_budget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eventplanner/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/fireworks.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/dashboard_home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/event_planner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/homepage/home_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/howitworks/howitworks_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/models/model_details_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/models/models_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/navbar_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/08637e16-d73d-42fa-bfcc-a8675197e5a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08637e16-d73d-42fa-bfcc-a8675197e5a8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProjectInvites/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProjectInvites/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProjectInvites/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProjectInvites/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/howitworks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/howitworks/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/howitworks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/howitworks/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/homepage/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/models/models.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/models.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userextend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userextend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userextend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userextend/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +62,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -40,27 +81,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.djangoProjectInvites.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/python/back-end tech/InvitesAPP/djangoProjectInvites&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.djangoProjectInvites.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/python/back-end tech/25.04.2024/djangoProject",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\python\back-end tech\InvitesAPP\djangoProjectInvites\static\templates\template1" />
@@ -129,6 +170,11 @@
       <workItem from="1716389747792" duration="785000" />
       <workItem from="1716397294805" duration="1542000" />
       <workItem from="1716540056058" duration="8880000" />
+      <workItem from="1716821083838" duration="484000" />
+      <workItem from="1716895999657" duration="162000" />
+      <workItem from="1716897717544" duration="267000" />
+      <workItem from="1716908244274" duration="15000" />
+      <workItem from="1716978284018" duration="16730000" />
     </task>
     <task id="LOCAL-00001" summary="new landing page">
       <option name="closed" value="true" />
@@ -178,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716553350578</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="last changes for log in and sign up">
+      <option name="closed" value="true" />
+      <created>1716821123077</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716821123077</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +241,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new landing page" />
-    <option name="LAST_COMMIT_MESSAGE" value="new landing page" />
+    <MESSAGE value="last changes for log in and sign up" />
+    <option name="LAST_COMMIT_MESSAGE" value="last changes for log in and sign up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,6 +250,11 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/homepage/views.py</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/djangoProjectInvites/settings.py</url>
+          <line>142</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

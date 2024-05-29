@@ -19,15 +19,20 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views
 from django.urls import path, include
+from django.views.generic import RedirectView
 
 from userextend.forms import AuthenticationNewForm
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('homepage.urls')),
+    path('', RedirectView.as_view(url='/home/')),
+    path('home/', include('homepage.urls')),
     path('howitworks/', include('howitworks.urls')),
     path('models/', include('models.urls')),
+    path('dashboard/', include('dashboard.urls')),
+    path('userextend/',include('userextend.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
     path("login/", views.LoginView.as_view(form_class=AuthenticationNewForm), name="login"),
-    path('', include('django.contrib.auth.urls')),
-    path('',include('userextend.urls'))
+    path("eventplanner/", include('eventplanner.urls'))
+
  ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
