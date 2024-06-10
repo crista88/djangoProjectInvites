@@ -1,24 +1,36 @@
+
 from django import forms
-from .models import Budget, Expense, Task
+from .models import Event, Task
 
 
-class BudgetForm(forms.ModelForm):
+class EventForm(forms.ModelForm):
     class Meta:
-        model = Budget
-        fields = ['amount']
+        model = Event
+        fields = ['name', 'budget', 'location', 'date']
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['amount'].widget.attrs.update({'required': 'true'})  # marchează câmpul 'amount' ca obligatoriu
-
-
-class ExpenseForm(forms.ModelForm):
-    class Meta:
-        model = Expense
-        fields = ['amount', 'description', 'date']
+        # Optional: Customize the form widgets
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Event name'}),
+            'budget': forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Budget'}),
+            'location': forms.TextInput(attrs={'class': 'form-control'}),
+            'date': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
+        }
 
 
 class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
-        fields = ['description', 'due_date']
+        fields = ['name', 'description', 'notes', 'deadline', 'status', 'price', 'supplier', 'event']
+
+        # Optional: Customize the form widgets
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'description': forms.Textarea(attrs={'class': 'form-control'}),
+            'notes': forms.Textarea(attrs={'class': 'form-control'}),
+            'deadline': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
+            'status': forms.Select(attrs={'class': 'form-control'}),
+            'price': forms.NumberInput(attrs={'class': 'form-control'}),
+            'supplier': forms.Textarea(attrs={'class': 'form-control'}),
+            'event': forms.Select(attrs={'class': 'form-control'}),
+        }
+

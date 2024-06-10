@@ -1,0 +1,52 @@
+{% extends 'base_planner.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="background-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-3">
+                    <div class="text-center">
+                        <h3>Create a New Event</h3>
+                    </div>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ event_form.as_p }}
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-secondary">Save Event</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>If you already have registered events, please check them <a class="nav-link dropdown-toggle"
+                                                                                       href="#" id="navbarDropdown"
+                                                                                       role="button"
+                                                                                       data-toggle="dropdown"
+                                                                                       aria-haspopup="true"
+                                                                                       aria-expanded="false">
+                            HERE
+                        </a></p>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {% for event in events %}
+                                <a class="dropdown-item" href="{% url 'event_detail' event.id %}">{{ event.name }}</a>
+                            {% endfor %}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .background-container {
+            background-image: url('{% static 'images/ballons.jpg' %}');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Set minimum height to cover the entire viewport */
+        }
+    </style>
+{% endblock %}
+
+
+
+

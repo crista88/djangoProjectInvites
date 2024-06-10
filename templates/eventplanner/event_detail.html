@@ -1,0 +1,105 @@
+{% extends 'base_planner.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="background-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-3">
+                    <div class="text-center">
+                        <h3>{{ event.name }}</h3>
+                        <p><strong>Location:</strong> {{ event.location }}</p>
+                        <p><strong>Date:</strong> {{ event.date }}</p>
+                        <p><strong>Budget:</strong> {{ event.budget }}</p>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <h4>Add a Task</h4>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ task_form.as_p }}
+                            <button type="submit" class="btn btn-secondary">Add Task</button>
+                        </form>
+                    </div>
+
+                    <div class="mt-4">
+                        <h4>TO DO Tasks</h4>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Notes</th>
+                                <th>Deadline</th>
+                                <th>Price</th>
+                                <th>Supplier</th>
+                                
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for task in tasks_todo %}
+                                <tr>
+                                    <td>{{ task.name }}</td>
+                                    <td>{{ task.description }}</td>
+                                    <td>{{ task.notes }}</td>
+                                    <td>{{ task.deadline }}</td>
+                                    <td>{{ task.price }}</td>
+                                    <td>{{ task.supplier }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-4">
+                        <h4>DONE Tasks</h4>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Notes</th>
+                                <th>Deadline</th>
+                                <th>Price</th>
+                                <th>Supplier</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for task in tasks_done %}
+                                <tr>
+                                    <td>{{ task.name }}</td>
+                                    <td>{{ task.description }}</td>
+                                    <td>{{ task.notes }}</td>
+                                    <td>{{ task.deadline }}</td>
+                                    <td>{{ task.price }}</td>
+                                    <td>{{ task.supplier }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {% if last_task_done %}
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <p style="color: red; font-style: italic;">
+                                    Last done task is: {{ last_task_done.name }},
+                                    Date: {{ last_task_done.updated_at }}
+                                </p>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .background-container {
+            background-image: url('{% static 'images/ballons.jpg' %}');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Set minimum height to cover the entire viewport */
+        }
+    </style>
+{% endblock %}

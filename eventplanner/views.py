@@ -1,58 +1,67 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth.decorators import login_required
-from .models import Budget, Expense, Task
-from .forms import BudgetForm, ExpenseForm, TaskForm
+from django.shortcuts import render, redirect, get_object_or_404
+from django.views import View
+from .models import Event, Task
+from .forms import EventForm, TaskForm
+from django.urls import reverse_lazy
+from django.views.generic import ListView
 
 
-@login_required
-def event_planner(request):
-    try:
-        # Obținem sau creăm bugetul pentru utilizatorul curent
-        budget, created = Budget.objects.get_or_create(user=request.user)
-    except Budget.DoesNotExist:
-        budget = Budget.objects.create(user=request.user, amount=0)
+class EventCreateView(View):
+    template_name = 'eventplanner/event_create.html'
 
-    # Filtrăm cheltuielile pentru bugetul utilizatorului curent
-    expenses = Expense.objects.filter(budget=budget)
+    def get(self, request, *args, **kwargs):
+        event_form = EventForm()
+        events = Event.objects.all()
+        return render(request, self.template_name, {'event_form': event_form, 'events': events})
 
-    # Filtrăm task-urile pentru utilizatorul curent
-    tasks = Task.objects.filter(user=request.user)
+    def post(self, request, *args, **kwargs):
+        event_form = EventForm(request.POST)
+        if event_form.is_valid():
+            event_form.save()
+            return redirect('event_detail')
+        events = Event.objects.all()
+        return render(request, self.template_name, {'event_form': event_form, 'events': events})
 
-    if request.method == 'POST':
-        if 'budget_submit' in request.POST:
-            # Verificăm dacă a fost trimis formularul pentru buget
-            budget_form = BudgetForm(request.POST, instance=budget)
-            if budget_form.is_valid():
-                # Salvăm obiectul Budget cu datele din formular
-                budget_instance = budget_form.save(commit=False)
-                budget_instance.user = request.user  # Asigurăm utilizatorul asociat cu bugetul
-                budget_instance.save()
-                return redirect('event_planner')  # Redirecționăm utilizatorul înapoi la pagina de planificare a evenimentelor
 
-        elif 'expense_submit' in request.POST:
-            # Verificăm dacă a fost trimis formularul pentru cheltuieli
-            expense_form = ExpenseForm(request.POST)
-            if expense_form.is_valid():
-                expense_instance = expense_form.save(commit=False)
-                expense_instance.budget = budget
-                expense_instance.save()
-                return redirect('event_planner')
+# class EventListView(ListView):
+#
+#     template_name = 'eventplanner/event_list.html'
+#
+#     def get(self, request, *args, **kwargs):
+#         events = Event.objects.all()
+#         return render(request, self.template_name, {'events': events})
 
-        elif 'task_submit' in request.POST:
-            # Verificăm dacă a fost trimis formularul pentru task-uri
-            task_form = TaskForm(request.POST)
-            if task_form.is_valid():
-                task_instance = task_form.save(commit=False)
-                task_instance.user = request.user
-                task_instance.save()
-                return redirect('event_planner')
 
-    else:
-        # Inițializăm form-urile cu sau fără datele existente din baza de date
-        budget_form = BudgetForm(instance=budget)
-        expense_form = ExpenseForm()
+class EventDetailView(View):
+    template_name = 'eventplanner/event_detail.html'
+
+    def get(self, request, pk, *args, **kwargs):
+        event = get_object_or_404(Event, pk=pk)
+        tasks_todo = Task.objects.filter(event=event, status='to_do')
+        tasks_done = Task.objects.filter(event=event, status='done')
         task_form = TaskForm()
+        context = {
+            'event': event,
+            'tasks_todo': tasks_todo,
+            'tasks_done': tasks_done,
+            'task_form': task_form,
+        }
+        return render(request, self.template_name, context)
 
-    return render(request, 'event_planner.html', {'budget': budget, 'expenses': expenses, 'tasks': tasks,
-                                                   'budget_form': budget_form, 'expense_form': expense_form,
-                                                   'task_form': task_form})
+    def post(self, request, pk, *args, **kwargs):
+        event = get_object_or_404(Event, pk=pk)
+        task_form = TaskForm(request.POST)
+        if task_form.is_valid():
+            task = task_form.save(commit=False)
+            task.event = event
+            task.save()
+            return redirect('event_detail', pk=event.pk)
+        tasks_todo = Task.objects.filter(event=event, status='To DO')
+        tasks_done = Task.objects.filter(event=event, status='Done')
+        context = {
+            'event': event,
+            'tasks_todo': tasks_todo,
+            'tasks_done': tasks_done,
+            'task_form': task_form,
+        }
+        return render(request, self.template_name, context)
