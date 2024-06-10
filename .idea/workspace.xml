@@ -5,26 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090e2987-0981-4adb-9cb6-088a3c643160" name="Changes" comment="update eventplanner">
-      <change afterPath="$PROJECT_DIR$/eventplanner/context_processors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventplanner/migrations/0002_alter_task_description_alter_task_notes_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base_planner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eventplanner/event_create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/eventplanner/event_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/navbar_planner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/08637e16-d73d-42fa-bfcc-a8675197e5a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08637e16-d73d-42fa-bfcc-a8675197e5a8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProjectInvites/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProjectInvites/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eventplanner/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/eventplanner/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventplanner/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/eventplanner/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventplanner/migrations/0002_budget_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventplanner/migrations/0003_alter_budget_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventplanner/migrations/0004_alter_budget_user_alter_expense_budget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventplanner/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/eventplanner/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eventplanner/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/eventplanner/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eventplanner/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/eventplanner/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/event_planner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_planner.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_planner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/eventplanner/event_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eventplanner/event_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/eventplanner/event_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eventplanner/event_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar_planner.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar_planner.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +143,7 @@
       <workItem from="1716978284018" duration="16730000" />
       <workItem from="1717004564453" duration="257000" />
       <workItem from="1717498806264" duration="3275000" />
-      <workItem from="1718006275185" duration="22301000" />
+      <workItem from="1718006275185" duration="31590000" />
     </task>
     <task id="LOCAL-00001" summary="new landing page">
       <option name="closed" value="true" />
@@ -220,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717004604055</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update eventplanner">
+      <option name="closed" value="true" />
+      <created>1718033603031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718033603031</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -17,21 +17,10 @@
                         </div>
                     </form>
                     <div class="text-center mt-3">
-                        <p>If you already have registered events, please check them <a class="nav-link dropdown-toggle"
-                                                                                       href="#" id="navbarDropdown"
-                                                                                       role="button"
-                                                                                       data-toggle="dropdown"
-                                                                                       aria-haspopup="true"
-                                                                                       aria-expanded="false">
-                            HERE
-                        </a></p>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {% for event in events %}
-                                <a class="dropdown-item" href="{% url 'event_detail' event.id %}">{{ event.name }}</a>
-                            {% endfor %}
-                        </div>
+                        <p>If you already have registered events, please check them in the EVENTS Tab, up.</p>
                         
                     </div>
+
                 </div>
             </div>
         </div>
@@ -46,7 +35,3 @@
         }
     </style>
 {% endblock %}
-
-
-
-

@@ -20,7 +20,7 @@ class EventForm(forms.ModelForm):
 class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
-        fields = ['name', 'description', 'notes', 'deadline', 'status', 'price', 'supplier', 'event']
+        fields = ['name', 'description', 'notes', 'deadline', 'status', 'price', 'supplier']
 
         # Optional: Customize the form widgets
         widgets = {
@@ -31,6 +31,6 @@ class TaskForm(forms.ModelForm):
             'status': forms.Select(attrs={'class': 'form-control'}),
             'price': forms.NumberInput(attrs={'class': 'form-control'}),
             'supplier': forms.Textarea(attrs={'class': 'form-control'}),
-            'event': forms.Select(attrs={'class': 'form-control'}),
+
         }
 
