@@ -13,6 +13,10 @@ class Event(models.Model):
     def __str__(self):
         return f'Event details {self.name}, {self.budget}, {self.location}, {self.date}'
 
+    def save(self, *args, **kwargs):
+        self.name = self.name.upper()
+        super(Event, self).save(*args, **kwargs)
+
 
 class Task(models.Model):
     status_option = (
@@ -32,3 +36,7 @@ class Task(models.Model):
 
     def __str__(self):
         return f'Task details {self.name}, {self.deadline}'
+
+    def save(self, *args, **kwargs):
+        self.name = self.name.upper()
+        super(Task, self).save(*args, **kwargs)

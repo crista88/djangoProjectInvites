@@ -5,7 +5,7 @@ from django.db import models
 class Model(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='model_images/')
+    image = models.ImageField(upload_to='media/model_images/')
 
     def __str__(self):
         return self.name

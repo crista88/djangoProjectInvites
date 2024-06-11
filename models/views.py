@@ -19,13 +19,16 @@ def models_view_dashboard(request):
     return render(request, 'models/models_dashboard.html', {'models': models})
 
 
+# def model_detail_view(request, id):
+#     model = get_object_or_404(Model, id=id)
+#     if request.user.is_authenticated:
+#         template_name = f'models/templates/template{id}.html'
+#     else:
+#         template_name = 'models/templates/template{id}.html'
+#     return render(request, template_name, {'model': model})
+
+
 def model_detail_view(request, id):
     model = get_object_or_404(Model, id=id)
-    if request.user.is_authenticated:
-        template_name = 'models/model_details_dashboard.html'
-    else:
-        template_name = 'models/model_detail.html'
+    template_name = f'models/templates/template{id}.html'
     return render(request, template_name, {'model': model})
-
-
-
