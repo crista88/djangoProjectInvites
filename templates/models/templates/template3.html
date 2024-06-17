@@ -1,230 +1,227 @@
 {% load static %}
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{% static 'templates/template3/assets/css/main.css' %}" />
-		<noscript><link rel="stylesheet" href="{% static 'templates/template3/assets/css/noscript.css' %}" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Forever</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="{% static 'templates/template3/assets/css/main.css' %}"/>
+    <noscript>
+        <link rel="stylesheet" href="{% static 'templates/template3/assets/css/noscript.css' %}"/>
+    </noscript>
+    <style>
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f2f2f2;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        .top-buttons a {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>This is<br />
-						Massively</h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        .top-buttons a:hover {
+            background-color: #555;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
-					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        /* Wrapper */
+        #wrapper {
+            -moz-transition: opacity 0.5s ease;
+            -webkit-transition: opacity 0.5s ease;
+            -ms-transition: opacity 0.5s ease;
+            transition: opacity 0.5s ease;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        #wrapper > .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #212931;
+            /* Folosește doar o imagine de fundal și ajustează transparența cu un gradient linear */
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('{% static "images/ballons.jpg" %}');
+            background-size: auto, cover; /* Utilizează 'cover' pentru a asigura că imaginea se potrivește în întregime */
+            background-position: center, top center; /* Poziționează imaginile de fundal */
+            background-repeat: no-repeat; /* Evită repetarea imaginilor */
+            background-attachment: scroll; /* Asigură derularea normală a fundalului */
+            z-index: -1;
+        }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
+        #wrapper > .bg.fixed {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+        }
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+        #wrapper.fade-in:before {
+            pointer-events: none;
+            -moz-transition: opacity 1s ease-in-out;
+            -webkit-transition: opacity 1s ease-in-out;
+            -ms-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+            -moz-transition-delay: 0.75s;
+            -webkit-transition-delay: 0.75s;
+            -ms-transition-delay: 0.75s;
+            transition-delay: 0.75s;
+            background: #1e252d;
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
 
-					</div>
+        body.is-preload #wrapper.fade-in:before {
+            opacity: 1;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        @media screen and (orientation: portrait) {
+            #wrapper > .bg {
+                background-size: auto, auto, auto 175%;
+            }
+        }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    </style>
 
-			</div>
+</head>
+<body class="is-preload">
 
-		<!-- Scripts -->
-			<script src="{% static 'templates/template3/assets/js/jquery.min.js' %}"></script>
-			<script src="{% static 'templates/template3/assets/js/jquery.scrollex.min.js' %}"></script>
-			<script src="{% static 'templates/template3/assets/js/jquery.scrolly.min.js' %}"></script>
-			<script src="{% static 'templates/template3/assets/js/browser.min.js' %}"></script>
-			<script src="{% static 'templates/template3/assets/js/breakpoints.min.js' %}"></script>
-			<script src="{% static 'templates/template3/assets/js/util.js' %}"></script>
-			<script src="{% static 'templates/template3/assets/js/main.js' %}"></script>
 
-	</body>
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
+
+    <!-- Top Buttons -->
+    <div class="top-buttons">
+        <a href="{% url 'models' %}">Back</a>
+        <a href="#">Choose</a>
+    </div>
+
+
+    <!-- Intro -->
+    <div id="intro">
+        <h1>Maria is retiring!</h1>
+        <p>25 of August 2025</p>
+        <ul class="actions">
+            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">Party Time!</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li class="active"><a href="#">Let's celebrate!</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Featured Post -->
+        <article class="post featured">
+            <header class="major">
+                <span class="date">25 of august 2025</span>
+                <h2><a href="#">I am going to retire!</a></h2>
+                <p>After decades of hard work and endless cups of coffee,
+                    I am finally hanging up my work boots and trading in the office chair for a comfy recliner.
+                    Join me as we celebrate my escape from the daily grind!.</p>
+            </header>
+            <a href="#" class="image main"><img src="{% static 'images/retirement_lady.jpg' %}" alt=""/></a>
+            <header class="major">
+                <span class="date">When & Where</span>
+                <h3><a href="#">25 of August 2025,Olive Garden, Str.Democratiei, no 112, Bucov, Prahova</a></h3>
+                <p>Come for the laughter, stay for the cake! Bring your dancing shoes, your best retirement advice,
+                    and your funniest work stories. Let’s make this a night we will never forget (or at least won’t
+                    remember for all the right reasons)! See you there!</p>
+
+                <p>Retirement: Where every day is a Saturday, and the only boss is the one who gets the TV remote.</p>
+
+
+            </header>
+            <header class="major">
+                <span class="date">Confirm your presence</span>
+                <h3><a href="#">25 of August 2025,Olive Garden, Str.Democratiei, no 112, Bucov, Prahova</a></h3>
+                <p>Let me know if you can join me and if so, please leave in the inbox message how many persons will
+                    attend and special requests if any!</p>
+
+            </header>
+        </article>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <form method="post" action="#">
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name"/>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email"/>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="3"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="I will participate"/></li>
+                    <li><input type="submit" value="I can not participate "/></li>
+                </ul>
+            </form>
+        </section>
+        <section class="split contact">
+            <section class="alt">
+                <h3>Address</h3>
+                <p>1234 Sun Road #87257<br/>
+                    Nashville, TN</p>
+            </section>
+            <section>
+                <h3>Phone</h3>
+                <p><a href="#">(000) 000-0000</a></p>
+            </section>
+
+        </section>
+    </footer>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'templates/template3/assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'templates/template3/assets/js/jquery.scrollex.min.js' %}"></script>
+<script src="{% static 'templates/template3/assets/js/jquery.scrolly.min.js' %}"></script>
+<script src="{% static 'templates/template3/assets/js/browser.min.js' %}"></script>
+<script src="{% static 'templates/template3/assets/js/breakpoints.min.js' %}"></script>
+<script src="{% static 'templates/template3/assets/js/util.js' %}"></script>
+<script src="{% static 'templates/template3/assets/js/main.js' %}"></script>
+
+</body>
 </html>

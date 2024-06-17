@@ -6,6 +6,28 @@ from .forms import EventForm, TaskForm
 from django.urls import reverse_lazy
 from django.views.generic import ListView
 
+""" de refactorizat codul cu clase generice based-views CreateView si DetailView
+ structura:
+ class EventCreateView(CreateView):
+    model = ''
+    form_class=''
+    template_name = 'eventplanner/event_create.html
+ 
+    def get_context_data()
+    def form_valid()
+    
+class EvenDetailView(DetailView):
+    model = ''
+    template_name = 'eventplanner/event_detail.html'
+    context_object_name = 'event'
+    
+    def get_context_data()
+    
+class taskCreateView(CreateView):
+    def post()
+    -- logica din EventDetailView de acum
+    
+functia mark_task_done() ramane"""
 
 class EventCreateView(View):
     template_name = 'eventplanner/event_create.html'
@@ -22,6 +44,7 @@ class EventCreateView(View):
             return redirect('event_detail', pk=event_form.instance.pk)
         events = Event.objects.all()
         return render(request, self.template_name, {'event_form': event_form, 'events': events})
+
 
 class EventDetailView(View):
     template_name = 'eventplanner/event_detail.html'
@@ -71,7 +94,6 @@ def mark_task_done(request, pk, task_id):
         if task.status != 'DONE':
             task.status = 'DONE'
             task.save()
-            # Update event budget
             event = task.event
             event.budget -= task.price
             event.save()
