@@ -41,7 +41,13 @@ class UserCreateView(CreateView):
             return redirect('dashboard_home')
         return super().form_valid(form)
 
+# pct valid la Radu..dupa ce ma loghez daca dau back in browser ma duce inapoi p pag de log in desii user e authentificat
+# leg cu cache-ul poate ? in mod normal javascript pt a nu mai memora cache-ul :( sau poate vreun model(clasa) cu python???
+# intreaba-l pe Daniel!!
 
+### Daniel zice asa:
+# in django core este un model cache care face exact asta, def o clasa de log in cache cu un OK si un timeut, 2 fc principale get si set
+# in models.py faci asta
 class UserLoginView(View):
     template_name = 'registration/login.html'
 

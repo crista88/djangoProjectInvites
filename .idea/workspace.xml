@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="090e2987-0981-4adb-9cb6-088a3c643160" name="Changes" comment="upload templates for models,TO DO personalize templates , form for upload personal pictures text , generate personalize link, account settings, stripe integration">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/08637e16-d73d-42fa-bfcc-a8675197e5a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08637e16-d73d-42fa-bfcc-a8675197e5a8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/templates/template3/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/templates/template3/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/templates/template3/assets/css/noscript.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/templates/template3/assets/css/noscript.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/templates/template3/assets/sass/noscript.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/templates/template3/assets/sass/noscript.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/templates/template7/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/templates/template7/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/models/templates/template1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/templates/template1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/models/templates/template2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/templates/template2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/models/templates/template3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/templates/template3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/models/templates/template4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/templates/template4.html" afterDir="false" />
-    </list>
+    <list default="true" id="090e2987-0981-4adb-9cb6-088a3c643160" name="Changes" comment="upload templates for models,TO DO personalize templates , form for upload personal pictures text , generate personalize link, account settings, stripe integration" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +137,7 @@
       <workItem from="1718249299080" duration="11477000" />
       <workItem from="1718303624539" duration="417000" />
       <workItem from="1718568952546" duration="54000" />
+      <workItem from="1718642469778" duration="1784000" />
     </task>
     <task id="LOCAL-00001" summary="new landing page">
       <option name="closed" value="true" />
@@ -238,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718108194013</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="upload templates for models,TO DO personalize templates , form for upload personal pictures text , generate personalize link, account settings, stripe integration">
+      <option name="closed" value="true" />
+      <created>1718644506645</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718644506645</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
